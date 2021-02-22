@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>HappyNewYear&nbsp;&ndash;&nbsp;标杆杆</title><link rel="stylesheet" href="/css/core.min.f1d3ebd5dacef286015d04950bfe91b0e1c580f2e6cc99098e8e5ad53aa706930b4611236d0508964707c1d111feecb8.css" integrity="sha384-8dPr1drO8oYBXQSVC/6RsOHFgPLmzJkJjo5a1TqnBpMLRhEjbQUIlkcHwdER/uy4"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="HappyNewYear" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/assets/img/logo.png" alt /><span class="site name">标杆杆</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about">About</a></nav></div></span></div><div class="site slogan"><span class="title">不想敲代码。</span></div></section>
+<section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">HappyNewYear</h1><p class="article date">Wednesday, January 1, 2020</p></section><article class="article markdown-body"><h1 id="新年快乐生日快乐">新年快乐！生日快乐！</h1>
+<h2 id="第一篇文章">第一篇文章</h2>
+<h2 id="刚开始用还不大会用-markdown"><code>刚开始用，还不大会用 Markdown</code></h2>
+<p>原计划是在一九年最后一天，也就是昨天上线的，结果由于脑子不在线导致没办法上线。</p>
+<h1 id="二零一九年度总结">二零一九年度总结</h1>
+<h2 id="技术方面">技术方面</h2>
+<h3 id="vim">Vim</h3>
+<p>经过一大段深坑浅坑的试探，终于确定了现在使用的 Vim 配置，中途出了不少小问题，尝试 SpaceVim 那次更是损失惨重，昨天完全删除了 SpaceVim，不能说是不好，只能说是不适合我，下面贴个 Vimrc 展示下。</p>
+<pre><code class="language-let" data-lang="let">set nu
+set autoindent
+
+call plug#begin('~/.vim/plugged')
+Plug 'mhinz/vim-startify'
+Plug 'easymotion/vim-easymotion'
+call plug#end()
+nmap &lt;leader&gt;f &lt;Plug&gt;(easymotion-s2)
+
+
+nnoremap &lt;leader&gt;w :w&lt;Cr&gt;
+nnoremap &lt;leader&gt;s &lt;Esc&gt;:
+nnoremap &lt;leader&gt;ve :vsplit $MYVIMRC&lt;Cr&gt;
+nnoremap &lt;leader&gt;vs :source $MYVIMRC&lt;Cr&gt;
+
+noremap &lt;leader&gt;i &lt;Esc&gt;:q&lt;Cr&gt;
+
+inoremap &lt;leader&gt;w &lt;Esc&gt;:w&lt;Cr&gt;
+inoremap &lt;c-u&gt; &lt;Esc&gt; viwU
+
+
+
+&quot;autocmd Filetype markdown map &lt;leader&gt;w yiWi[&lt;esc&gt;Ea](&lt;esc&gt;pa)
+autocmd Filetype markdown inoremap ,h &lt;Esc&gt;/&lt;(_ _)&gt;&lt;CR&gt;:nohlsearch&lt;CR&gt;c7l
+autocmd Filetype markdown inoremap ,s &lt;Esc&gt;/ &lt;(_ _)&gt;&lt;CR&gt;:nohlsearch&lt;CR&gt;c5l&lt;CR&gt;
+autocmd Filetype markdown inoremap ,n ---&lt;Enter&gt;&lt;Enter&gt;
+autocmd Filetype markdown inoremap ,b **** &lt;(_ _)&gt;&lt;Esc&gt;F*hi
+autocmd Filetype markdown inoremap ,s ~~~~ &lt;(_ _)&gt;&lt;Esc&gt;F~hi
+autocmd Filetype markdown inoremap ,z &lt;sup&gt;&lt;/sup&gt;&lt;(_ _)&gt;&lt;Esc&gt;F/hi
+autocmd Filetype markdown inoremap ,v &lt;sub&gt;&lt;/sub&gt;&lt;(_ _)&gt;&lt;Esc&gt;F/hi
+autocmd Filetype markdown inoremap ,t ** &lt;(_ _)&gt;&lt;Esc&gt;F*i
+autocmd Filetype markdown inoremap ,d `` &lt;(_ _)&gt;&lt;Esc&gt;F`i
+autocmd Filetype markdown inoremap ,c ```&lt;Enter&gt;&lt;(_ _)&gt;&lt;Enter&gt;```&lt;Enter&gt;&lt;Enter&gt;&lt;(_ _)&gt;&lt;Esc&gt;5kA
+autocmd Filetype markdown inoremap ,m - [ ] &lt;Enter&gt;&lt;(_ _)&gt;&lt;ESC&gt;kA
+autocmd Filetype markdown inoremap ,p ![](&lt;(_ _)&gt;) &lt;(_ _)&gt;&lt;Esc&gt;F[a
+autocmd Filetype markdown inoremap ,a [](&lt;(_ _)&gt;) &lt;(_ _)&gt;&lt;Esc&gt;F[a
+autocmd Filetype markdown inoremap ,0 #&lt;Space&gt;&lt;Enter&gt;&lt;(_ _)&gt;&lt;Esc&gt;kA
+autocmd Filetype markdown inoremap ,9 ##&lt;Space&gt;&lt;Enter&gt;&lt;(_ _)&gt;&lt;Esc&gt;kA
+autocmd Filetype markdown inoremap ,8 ###&lt;Space&gt;&lt;Enter&gt;&lt;(_ _)&gt;&lt;Esc&gt;kA
+autocmd Filetype markdown inoremap ,7 ####&lt;Space&gt;&lt;Enter&gt;&lt;(_ _)&gt;&lt;Esc&gt;kA
+autocmd Filetype markdown inoremap ,l --------&lt;Enter&gt;```
+</code></pre><h2 id="使用了-neovim-应该不叫-vimrc-了但还是改不了习惯">使用了 Neovim 应该不叫 Vimrc 了，但还是改不了习惯。</h2>
+<h3 id="os">OS</h3>
+<h2 id="目前使用的是-win10ltscmanjaro-双系统移动设备还是万年不变的-miuiipados看了别人搞-的单片机项目心水打算趁年假期间完善下这方面的技术">各个操作系统的配置基本也摸清定型，以后要做的就是小打小闹，老了~不想搞太多花里胡哨的东西。
+目前使用的是 Win10Ltsc+Manjaro 双系统，移动设备还是万年不变的 Miui+IpadOS，看了别人搞 的单片机项目心水，打算趁年假期间完善下这方面的技术。</h2>
+<h3 id="键盘">键盘</h3>
+<h2 id="这一年里搞的最多的就是键盘了从客制化到量产再从量产回归客制化最后用-ydkb-的配置完成养老需求也算是完满了目前主力-just60bggpadbggpad-的双旋钮加-oled-屏幕特性还是尝试qmk-虽然文档完善但奈何我是个四级都没过的渣渣这-markdown-中英文切换是真的恶心有时间得考虑下英文写作">这一年里搞的最多的就是键盘了，从客制化到量产，再从量产回归客制化，最后用 Ydkb 的配置完成养老需求，也算是完满了，目前主力 Just60+Bggpad，Bggpad 的双旋钮加 Oled 屏幕特性还是尝试，Qmk 虽然文档完善，但奈何我是个四级都没过的渣渣，<del>这 Markdown 中英文切换是真的恶心，有时间得考虑下英文写作</del></h2>
+<h3 id="其他外设">其他外设</h3>
+<p>这块毫无进展，从耳机坑里跳出来了，以后任它玄学吹上天，我自一毛不拔！
+年中听说 G502 出了无线版，本想换但考虑到换掉了重滚轮，重心变化太大最后不了了之。<del>才不是因为没钱</del></p>
+<h3 id="好像这个标题下技术方面来着">好像这个标题下技术方面来着</h3>
+<p>我在写些什么鬼东西<del>算了不管了，自怨自艾。</del></p>
+<h3 id="桌面环境">桌面环境</h3>
+<h2 id="linux-下被-i3wm-圈粉现在使用体验舒适基本实现预期目标windows-下打算搞出类似操作本以为-bugn-可以作为替代但不精于-autohotkey无奈作罢">Linux 下被 I3wm 圈粉，现在使用体验舒适，基本实现预期目标，Windows 下打算搞出类似操作，本以为 bug.n 可以作为替代，但不精于 AutoHotKey，无奈作罢。</h2>
+<h3 id="身体">身体</h3>
+<h2 id="真的是老了前些天胸口疼外加多日睡眠期间打呼噜可能哪里出什么问题赶假期要去检查一下最近有几次长时间敲键盘左臂刺痛右手虎口也有症状不能在高强度工作了">真的是老了，前些天胸口疼，外加多日睡眠期间打呼噜，可能哪里出什么问题，赶假期要去检查一下，最近有几次长时间敲键盘，左臂刺痛，右手虎口也有症状，不能在高强度工作了。</h2>
+</article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/posts/windowslinux_bluetooth/"><span class="iconfont icon-article"></span>Windows、Linux 双系统蓝牙连接</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">©2021 thaoeu.</p>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p><p style="font-size: 12px;"><a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">黑ICP备19007841号-2</a></p><p style="font-size: 12px;"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noopener noreferrer"><img style="vertical-align: text-bottom; width: 15px; height: 15px;" src=/assets/img/%e5%8f%88%e6%8b%8d%e4%ba%91.svg>又拍云提供 CDN</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+</section></body>
+
+</html>

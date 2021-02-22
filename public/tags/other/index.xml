@@ -1,0 +1,311 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>other on 标杆杆</title>
+    <link>https://thaoeu.site/tags/other/</link>
+    <description>Recent content in other on 标杆杆</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 thaoeu.</copyright>
+    <lastBuildDate>Fri, 28 Feb 2020 19:29:23 +0800</lastBuildDate>
+    
+        <atom:link href="https://thaoeu.site/tags/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fcitx 码表进度</title>
+      <link>https://thaoeu.site/posts/q10fcitx/</link>
+      <pubDate>Sat, 20 Feb 2021 20:57:25 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/q10fcitx/</guid>
+      <description>&lt;h1 id=&#34;基于小鹤音形的码表&#34;&gt;基于小鹤音形的码表&lt;/h1&gt;
+&lt;p&gt;目前已经过前常用去千字，码长基本满意。&lt;/p&gt;
+&lt;p&gt;但有些地方打起来还是不爽，如：“熊熊”“猜猜”这类要同指击键四次。&lt;/p&gt;
+&lt;p&gt;我是极度喜欢左右、左右两手循环的击键方式，不过这类纯音码不好实在不好更改，没有什么好的办法。&lt;/p&gt;
+&lt;p&gt;另外一个痛点在于符号。&lt;/p&gt;
+&lt;p&gt;由于占用了处于左上的 &amp;lsquo;,. 三键，目前将符号放入码表勉强使用。&lt;/p&gt;
+&lt;p&gt;但由于单码无法上屏，所以每次输入符号都要按两次，如果是其他键还可以忍受符号错位，简单 wvz 三键实在无法解决。&lt;/p&gt;
+&lt;p&gt;另：Fcitx 默认的中括号为：“「」”，还挺好看的。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linux Fcitx 挂载小鹤音形</title>
+      <link>https://thaoeu.site/posts/fcitx/</link>
+      <pubDate>Sat, 30 May 2020 15:46:04 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/fcitx/</guid>
+      <description>&lt;p&gt;网上说码表挂接几乎是最简单的 Linux 任务&amp;lt;(_ _)&amp;gt;&lt;/p&gt;
+&lt;p&gt;然而我每次安装都磕磕绊绊&lt;/p&gt;
+&lt;p&gt;这次特意翻看了下 Fcitx-rime 文档，才发现一直以来我都在走弯路&lt;/p&gt;
+&lt;h2 id=&#34;码表挂接确实非常简单&#34;&gt;码表挂接确实非常简单&lt;/h2&gt;
+&lt;p&gt;安装软件包&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pacman -S fcitx fcitx-configtool fcitx-rime&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;前往&lt;a href=&#34;flypy.ys168.com&#34;&gt;小鹤网盘&lt;/a&gt;
+ 下载码表&lt;/p&gt;
+&lt;p&gt;位于网盘：小鹤音形挂接第三方目录下：Rime 平台鼠须管 for macOS.zip&lt;/p&gt;
+&lt;p&gt;文件名是 macOS，Linux 挂接完全可用&lt;/p&gt;
+&lt;p&gt;下载后解压&lt;/p&gt;
+&lt;p&gt;将 Rime 文件夹内容添加到~/.config/fcitx/rime&lt;/p&gt;
+&lt;p&gt;执行 fcitx-configtool 在面板添加输入法&lt;/p&gt;
+&lt;p&gt;完毕&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kdeconnect 在 Windows 运行问题</title>
+      <link>https://thaoeu.site/posts/kdeconnect/</link>
+      <pubDate>Mon, 11 May 2020 07:28:12 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/kdeconnect/</guid>
+      <description>&lt;blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pkg</title>
+      <link>https://thaoeu.site/posts/pkg/</link>
+      <pubDate>Thu, 26 Mar 2020 19:54:38 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/pkg/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;pkg search &amp;lt;query&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;搜索包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg install &amp;lt;package&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg uninstall &amp;lt;package&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;卸载包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg reinstall &amp;lt;package&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;重新安装包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更新源&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg upgrade
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;升级软件包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg list-all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;列出可供安装的所有包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg list-installed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;列出已经安装的包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg shoe &amp;lt;package&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示某个包的详细信息&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pkg files &amp;lt;package&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;显示某个包的相关文件夹路径&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>浏览器推荐－vivaldi</title>
+      <link>https://thaoeu.site/posts/vivaldi/</link>
+      <pubDate>Fri, 28 Feb 2020 19:29:23 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/vivaldi/</guid>
+      <description>&lt;p&gt;今儿偷个懒，直接把知乎链接贴这儿了！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/109780354&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;知乎&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>记录一次失败的尝试－崩坏 3 安装</title>
+      <link>https://thaoeu.site/posts/honkaiimpact3rd/</link>
+      <pubDate>Thu, 27 Feb 2020 19:04:54 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/honkaiimpact3rd/</guid>
+      <description>&lt;p&gt;自从全线转 Linux 后，已经很久没有用 Pc 玩过游戏了。
+只能偶尔玩下手游解解馋，但奈何手机屏幕小、性能也差，就打起了安装崩坏 3 客户端的主义。
+说干就干，先前电脑上用 QQ 时就装好了 Wine, 便直接去管网下载了客户端的安装包。
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/JdborxRg357cFZh.png&#34;
+        alt=&#34;bh3-1.png&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;一切看起来如此的美好，如此的顺利。
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/GwJZ6XgMNjRrebd.png&#34;
+        alt=&#34;bh3-2.png&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;然而，世间不如意十之八九。
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/5wBgUcHSodMiYRP.png&#34;
+        alt=&#34;bh3-3.png&#34;/&gt;
+首次尝试：卒！&lt;/p&gt;
+&lt;p&gt;但我肯定不能这么简单的放弃，打开谷歌，一阵操作。
+天无绝人之路！
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/ZL3P16BcW4HXYFf.png&#34;
+        alt=&#34;lutris.png&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lutris.net/games/honkai-impact-3rd/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HonkaiImpact3rd&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;看看这专业的网页介绍，看看首页的那硕大的守望先锋宣传，本铁拳玩家仿佛看到了希望！&lt;/p&gt;
+&lt;p&gt;按着教程，安装平台，下载崩坏 3．
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/4v89OjMg3qidATP.png&#34;
+        alt=&#34;3rd-1.png&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;emmm, 情况不妙，貌似不是国服的样子。
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/uomV7pDMAOLWt2B.png&#34;
+        alt=&#34;3rd-2.png&#34;/&gt;
+罢了，整！
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/98mYVO6jgSCcoEX.png&#34;
+        alt=&#34;vpnn.png&#34;/&gt;
+看着这飞速消耗的流量，有一丝的心痛，但&lt;del&gt;为了见老婆&lt;/del&gt; 验证技术。我还是毅然决然的选择了继续。
+在付出极大的代价后。
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/CndH9tkwuYimvMf.png&#34;
+        alt=&#34;ssrr.png&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;终于它更新完了！我用颤抖的手选中了那个黄底黑字的 Start.
+仅仅一瞬，我的 Htop 显示我的内存可用数已不足两位，我天真的以为是后台内存占用过多。
+于是清理所有无关程序，腾出足够的内存再次尝试。&lt;/p&gt;
+&lt;p&gt;&lt;img  src=&#34;https://i.loli.net/2020/02/27/XOpgHNGVtWcEbr6.png&#34;
+        alt=&#34;15g.png&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;这次我的内存稍稍多挺了一会，但那个期待中的电梯窗口还是没有出现。&lt;/p&gt;
+&lt;p&gt;至此，我还没有死心，为了排除是启用 Dwm 导致的，我特意安装了 Kde 环境，果然，在 Kde 下情况不一样了。&lt;/p&gt;
+&lt;p&gt;我的窗口在点击的时候直接最小化，但游戏还是没有按预期的情况正常运行。&lt;/p&gt;
+&lt;p&gt;翻回 Lutris 看了看下面的评论，罢了，游戏不玩就不玩罢！
+&lt;img  src=&#34;https://i.loli.net/2020/02/27/CiNqYQabsTJ4DIc.png&#34;
+        alt=&#34;reply.png&#34;/&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>终端字符</title>
+      <link>https://thaoeu.site/posts/symbol/</link>
+      <pubDate>Sat, 22 Feb 2020 20:28:57 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/symbol/</guid>
+      <description>&lt;p&gt;测试了下在 dmenu 下看着还可以的字符
+字体：Source Code Pro
+字号：10
+◂ ▾ ▴ ▸
+◄ ▼ ▲ ►
+◢ ◣ ◤ ◥
+◩ ◪ ◭ ◮
+⌛
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|
+
+
+
+
+
+
+
+
+λ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vimer 是如何使用 Htop 的</title>
+      <link>https://thaoeu.site/posts/htop/</link>
+      <pubDate>Sat, 22 Feb 2020 15:25:48 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/htop/</guid>
+      <description>&lt;p&gt;Htop 是一款开源的交互式进程管理器，很多 Linux 发行版都内置了它。
+但默认的 Htop 是使用方向键进行进程的选择，我这种没有方向键的用户就不便使用。
+在 Htop 的仓库里也有人提过这个需求，但官方给的方案是－使用 Alt+hjkl 移动。
+但偏偏不巧的是，我还是个 Dwm 用户，我的 Alt 键被占用了。
+所以&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yay -S htop-vim-git
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;htop-vim-git 完美地解决了 Htop 下移动选择进程的问题，但它也占用了诸如：k, l 的一系列按键。
+如果你有方向键，或者你能接受 Alt+hjkl 的移动方式，那我建议你使用原版的 Htop.&lt;/p&gt;
+&lt;p&gt;这里顺带介绍下 Htop 的一些快捷键。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;F1, h, ?		帮助&lt;/li&gt;
+&lt;li&gt;F2, Shift+s	设置&lt;/li&gt;
+&lt;li&gt;F3, /			搜索&lt;/li&gt;
+&lt;li&gt;F4, \			筛选&lt;/li&gt;
+&lt;li&gt;F5, t			目录树&lt;/li&gt;
+&lt;li&gt;F6, &amp;lt;&amp;gt;		切换排序方式&lt;/li&gt;
+&lt;li&gt;F7, ]			提高进程优先级&lt;/li&gt;
+&lt;li&gt;F8, [			降低进程有限级&lt;/li&gt;
+&lt;li&gt;F9, k			杀死进程&lt;/li&gt;
+&lt;li&gt;F10, q		退出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在 htop-vim-git 下快捷键稍有不同。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;F1, h, ?		帮助&lt;/li&gt;
+&lt;li&gt;F2, Shift+s	设置&lt;/li&gt;
+&lt;li&gt;F3, /			搜索&lt;/li&gt;
+&lt;li&gt;F4, \			筛选&lt;/li&gt;
+&lt;li&gt;F5, t			目录树&lt;/li&gt;
+&lt;li&gt;F6, &amp;lt;&amp;gt;		切换排序方式&lt;/li&gt;
+&lt;li&gt;F7, ]			提高进程优先级&lt;/li&gt;
+&lt;li&gt;F8, [			降低进程有限级&lt;/li&gt;
+&lt;li&gt;F9, Shift+k	杀死进程&lt;/li&gt;
+&lt;li&gt;F10, q		退出&lt;/li&gt;
+&lt;li&gt;p				切换 Command 简称&lt;/li&gt;
+&lt;li&gt;., o,	,		选择排序方式&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo 使用汇总</title>
+      <link>https://thaoeu.site/posts/hugo/</link>
+      <pubDate>Tue, 18 Feb 2020 21:01:40 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/hugo/</guid>
+      <description>&lt;p&gt;使用 hugo 搭建博客也有一段时间了，现在总体还算方便，记录下安装过程以备重装。&lt;del&gt;毕竟学生机一年一换。&lt;/del&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>关于 Patch 补丁</title>
+      <link>https://thaoeu.site/posts/patch/</link>
+      <pubDate>Tue, 18 Feb 2020 16:00:37 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/patch/</guid>
+      <description>&lt;p&gt;Patch 是 Unix 上的应用程序，用于更新文本文件，一般为.diff 文件，要使用 patch 或者说打一个补丁，只要在终端执行：
+shell&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;patch &amp;lt; example.diff
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

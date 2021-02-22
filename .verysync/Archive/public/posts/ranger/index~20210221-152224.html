@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.80.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Ranger 使用&nbsp;&ndash;&nbsp;标杆杆</title><link rel="stylesheet" href="/css/core.min.f1d3ebd5dacef286015d04950bfe91b0e1c580f2e6cc99098e8e5ad53aa706930b4611236d0508964707c1d111feecb8.css" integrity="sha384-8dPr1drO8oYBXQSVC/6RsOHFgPLmzJkJjo5a1TqnBpMLRhEjbQUIlkcHwdER/uy4"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Ranger 使用" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/assets/img/logo.png" alt /><span class="site name">标杆杆</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about">About</a></nav></div></span></div><div class="site slogan"><span class="title">不想敲代码。</span></div></section>
+<section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Ranger 使用</h1><p class="article date">Friday, February 14, 2020</p></section><article class="article markdown-body"><h2 id="ranger-特性">Ranger 特性</h2>
+<p>Ranger 是一个终端下的文件管理器，提供了一个类 Vim 的操作环境。
+<a href="https://github.com/ranger/ranger"target="_blank" rel="noopener noreferrer">Ranger 的项目代码</a>
+</p>
+<h2 id="查看-ranger-可选依赖">查看 ranger 可选依赖</h2>
+<p><code>pacman -Qi ranger</code></p>
+<pre><code>pacman -Qi ranger
+</code></pre>
+<p>如使用 Aur</p>
+<pre><code>`yay -Qi ranger`
+</code></pre>
+<p>确认安装 w3m 或 python-ueberzug</p>
+<p>修改 range 配置文件：~/.config/ranger/rc.conf</p>
+<p>如无则生成默认配置文件<code>ranger --copy-config=all</code></p>
+<p>找到配置文件中的<code>set preview_images</code> 行</p>
+<p>修改为<code>set preview_images true</code></p>
+<p>在<code>set preview_images_method w3m</code> 选择想要预览图片的依赖，默认 w3m</p>
+<p>在 ranger 窗口内按<code>zi</code> 开启预览</p>
+<p><img  src="https://raw.githubusercontent.com/thaoeu/Mypic/master/title.png?token=AIDRQMWW4DFW7G5FCYGVOZC6IYXKE"
+        alt/></p>
+<p><img  src="https://i.loli.net/2020/02/25/yYglxvULAOrWJSb.jpg"
+        alt="Hatsune.Miku.jpg"/></p>
+<h2 id="ranger-配置文件rcconf">Ranger 配置文件：rc.conf</h2>
+<h2 id="ranger-的使用方法都包含在配置文件中了这里我直接从配置文件">Ranger 的使用方法都包含在配置文件中了，这里我直接从配置文件</h2>
+<p>好！现在回想一下你在终端下的文件操作吧</p>
+<p>当你想要对文件进行增删改查</p>
+<p>你需要用 cd 命令进入目录，执行 ls 来列举目录下的文件名</p>
+<p>或许你想了解更多，那么你还要在 ls 后面加上一系列的参数</p>
+<p>如果目录里有海量的文件让你无法一眼看到目标</p>
+<p>那么恭喜你，Find 命令可以帮助你</p>
+<p>但是！不带参数的 Find 命令是无法模糊搜索的，如果想要支持模糊搜索，那么你还要加上 <code>-name '*.txt&quot;</code></p>
+<p>这还没完，找到目标文件后，想要复制</p>
+<p>你要运行 cp 并且至少要知道你目标位置的相对路径</p>
+<p>剪切则用 mv, 或者复制后将目标文件删除</p>
+<p>删除一个文件还好，但如果你想对一个文件夹下手</p>
+<p>那么你还要添加 -r 参数</p>
+<p>在这个过程中，是不会进行递归删除的</p>
+<p>你的终端会一次次地问你：你确定删除这个吗？你确定吗？你真的确定吗？</p>
+<p>哪怕你是一个熟练的 Linux 用户，经过这么一套操作也肯定身心俱疲</p>
+<p>如果你不满足现状，希望从这些繁杂的操作中解放出来</p>
+<p>那么这个开源的工具 <strong>Ranger</strong>, 就是为你量身定做的！</p>
+<p>Ranger 是一款轻量的命令行文件管理器，类 vim 操作，支持强大的自定义配置
+项目地址：<code>https://github.com/ranger/ranger</code></p>
+<p>稍微配置一下后，长这样
+<img  src="~/Pictures/CL/ranger/code.png"
+        alt/>
+<img  src="~/Pictures/CL/ranger/picture.png"
+        alt/>
+Ranger 支持图片预览、语法高亮，并且能匹配文件类型图标</p>
+<h2 id="ranger-安装">Ranger 安装</h2>
+<p>几乎所有的 Linux 包管理器都可以直接找到 Ranger.
+但我更推荐的是通过 github 源码安装
+克隆 Ranger</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git clone https://github.com/ranger/ranger
+</code></pre></div><p>这时就可以通过下面的命令运行 Raner</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ranger <span class="o">&amp;&amp;</span> ./ranger.py
+</code></pre></div><p>当然安装是必须的</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo make clean install
+</code></pre></div><h2 id="ranger-配置">Ranger 配置</h2>
+<p>到这里 Ranger 就已经安装好了，但默认的 Ranger 没有图片预览和代码高亮</p>
+<p>现在就要开始配置 Ranger, 来实现这些功能</p>
+<p>Ranger 支持相当多的可选依赖，如果你像我一样使用 pacman 作包管理器，只要在终端执行</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pacman -Qi ranger
+</code></pre></div><p>可知</p>
+<pre><code>
+名字           : ranger
+版本           : 1.9.3.4.gd8c363c9-1
+描述           : A simple, vim-like file manager.
+架构           : any
+URL            : https://ranger.github.io/
+软件许可       : GPL
+组             : 无
+提供           : ranger
+依赖于         : python
+可选依赖       : atool: for previews of archives 『已安装』
+                 file: for determining file types 『已安装』
+                 highlight: for syntax highlighting of code 『已安装』
+                 libcaca: for ASCII-art image previews 『已安装』
+                 mediainfo: for viewing information about media files
+                 perl-image-exiftool: for viewing information about media files
+                 poppler: for pdf previews 『已安装』
+                 python-bidi: for bidi algorithm support
+                 python-chardet: in case of encoding detection problems 『已安装』
+                 python-ueberzug: w3mimgdisplay alternative 『已安装』
+                 sudo: to use the &quot;run as root&quot;-feature 『已安装』
+                 transmission-cli: for viewing bittorrent information
+                 w3m: for previews of images and html pages 『已安装』
+                 python-ueberzug: for previews of images and html pages 『已安装』
+依赖它         : 无
+被可选依赖     : 无
+与它冲突       : ranger
+取代           : 无
+安装后大小     : 1899.65 KiB
+打包者         : Matti Hyttinen &lt;matti@manjaro.com&gt;
+编译日期       : 2020 年 02 月 03 日 星期一 02 时 55 分 52 秒
+安装日期       : 2020 年 02 月 24 日 星期一 15 时 01 分 52 秒
+安装原因       : 单独指定安装
+安装脚本       : 否
+验证者         : 数字签名
+
+</code></pre><p>图片预览这里我使用的是 ueberzug</p>
+<p>装好依赖到配置文件修改 preview_images_method 行为</p>
+<pre><code>set preview_images_method ueberzug
+</code></pre><p>Ranger 的配置文件为 <code>~/.config/ranger/rc.conf</code></p>
+<p>代码高亮需要安装 highlight, 这些都能在包管理器中安装</p>
+<p>文件类型图标插件我已经上传到了 github</p>
+<p>下载好放到 Ranger 的 plugins 目录下即可</p>
+<pre><code>https://github.com/thaoeu/ranger/tree/master/plugins
+</code></pre><p>这篇到这里就结束了</p>
+<p>关于 Ranger 的其他操作留到下篇</p>
+<p><del>写太长自己都看不下去</del></p>
+</article><section class="article labels"><a class="tag" href=/tags/linux/>Linux</a></section>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/posts/pangu/"><span class="iconfont icon-article"></span>说说中文 Markdown 文案，以及一款为此而生的 Vim 插件</a></p><p><a class="link" href="/posts/keynav/"><span class="iconfont icon-article"></span>Keynav- 鼠标控制程序推荐</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">©2021 thaoeu.</p>
+    <p class="powerby"><span>Powered&nbsp;by&nbsp;</span><a href="https://gohugo.io" 
+        target="_blank" rel="noopener noreferrer">Hugo</a><span>&nbsp;&amp;&nbsp;</span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank" rel="noopener noreferrer">Notepadium</a></p><p style="font-size: 12px;"><a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">黑ICP备19007841号-2</a></p><p style="font-size: 12px;"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noopener noreferrer"><img style="vertical-align: text-bottom; width: 15px; height: 15px;" src=/assets/img/%e5%8f%88%e6%8b%8d%e4%ba%91.svg>又拍云提供 CDN</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+</section></body>
+
+</html>

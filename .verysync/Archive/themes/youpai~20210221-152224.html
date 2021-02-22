@@ -1,0 +1,14 @@
+{{- with site.Params.youpai -}}
+{{- if or .icon .power -}}
+<p style="font-size: 12px;">
+    {{- if .icon -}}
+        <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noopener noreferrer"><img style="vertical-align: text-bottom; width: 15px; height: 15px;" src={{- "/assets/img/又拍云.svg" | relURL -}}>{{- .icon -}}</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;    
+    {{- end -}}
+    
+    {{- if .power -}}
+        <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noopener noreferrer">{{- .power -}}</a>
+    {{- end -}}
+</p>
+{{- end -}}
+{{- end -}}
