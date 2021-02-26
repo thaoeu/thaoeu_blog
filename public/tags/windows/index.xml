@@ -12,6 +12,29 @@
     
     
     <item>
+      <title>Hugo 文件测试</title>
+      <link>https://thaoeu.site/posts/q10-hugo/</link>
+      <pubDate>Fri, 26 Feb 2021 12:47:25 +0800</pubDate>
+      
+      <guid>https://thaoeu.site/posts/q10-hugo/</guid>
+      <description>&lt;h1 id=&#34;测试系统&#34;&gt;测试系统&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Linux aarch64&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Windows x86_64&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Linux x86_64&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;测试结果&#34;&gt;测试结果&lt;/h1&gt;
+&lt;p&gt;在三终端分别安装的 ARM64、Windows-64、Linux-64，由于终端配置不同，性能测试没有任何参考价值。&lt;/p&gt;
+&lt;p&gt;但使用同样主题、文章的测试博客目录在不同终端下生成的文件有较大差异。&lt;/p&gt;
+&lt;p&gt;同时激进的尝试三终端共用目录，整体文件大小从 27MB 膨胀至 82MB。&lt;/p&gt;
+&lt;p&gt;目前没找到文件变大的原因，但真的能用！&lt;/p&gt;
+&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;
+&lt;p&gt;本次为娱乐性尝试，没做系统的数据统计，但真的没想到真的可以共用目录。&lt;/p&gt;
+&lt;p&gt;往后可以在多个终端进行写作、编译发布了，总算还是有些收获。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>打字</title>
       <link>https://thaoeu.site/posts/q10zi/</link>
       <pubDate>Mon, 22 Feb 2021 22:04:49 +0800</pubDate>
@@ -203,58 +226,6 @@
       <description>&lt;p&gt;今儿偷个懒，直接把知乎链接贴这儿了！&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/109780354&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;知乎&lt;/a&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>记录一次失败的尝试－崩坏 3 安装</title>
-      <link>https://thaoeu.site/posts/honkaiimpact3rd/</link>
-      <pubDate>Thu, 27 Feb 2020 19:04:54 +0800</pubDate>
-      
-      <guid>https://thaoeu.site/posts/honkaiimpact3rd/</guid>
-      <description>&lt;p&gt;自从全线转 Linux 后，已经很久没有用 Pc 玩过游戏了。
-只能偶尔玩下手游解解馋，但奈何手机屏幕小、性能也差，就打起了安装崩坏 3 客户端的主义。
-说干就干，先前电脑上用 QQ 时就装好了 Wine, 便直接去管网下载了客户端的安装包。
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/JdborxRg357cFZh.png&#34;
-        alt=&#34;bh3-1.png&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;一切看起来如此的美好，如此的顺利。
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/GwJZ6XgMNjRrebd.png&#34;
-        alt=&#34;bh3-2.png&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;然而，世间不如意十之八九。
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/5wBgUcHSodMiYRP.png&#34;
-        alt=&#34;bh3-3.png&#34;/&gt;
-首次尝试：卒！&lt;/p&gt;
-&lt;p&gt;但我肯定不能这么简单的放弃，打开谷歌，一阵操作。
-天无绝人之路！
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/ZL3P16BcW4HXYFf.png&#34;
-        alt=&#34;lutris.png&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://lutris.net/games/honkai-impact-3rd/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HonkaiImpact3rd&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;看看这专业的网页介绍，看看首页的那硕大的守望先锋宣传，本铁拳玩家仿佛看到了希望！&lt;/p&gt;
-&lt;p&gt;按着教程，安装平台，下载崩坏 3．
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/4v89OjMg3qidATP.png&#34;
-        alt=&#34;3rd-1.png&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;emmm, 情况不妙，貌似不是国服的样子。
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/uomV7pDMAOLWt2B.png&#34;
-        alt=&#34;3rd-2.png&#34;/&gt;
-罢了，整！
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/98mYVO6jgSCcoEX.png&#34;
-        alt=&#34;vpnn.png&#34;/&gt;
-看着这飞速消耗的流量，有一丝的心痛，但&lt;del&gt;为了见老婆&lt;/del&gt; 验证技术。我还是毅然决然的选择了继续。
-在付出极大的代价后。
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/CndH9tkwuYimvMf.png&#34;
-        alt=&#34;ssrr.png&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;终于它更新完了！我用颤抖的手选中了那个黄底黑字的 Start.
-仅仅一瞬，我的 Htop 显示我的内存可用数已不足两位，我天真的以为是后台内存占用过多。
-于是清理所有无关程序，腾出足够的内存再次尝试。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://i.loli.net/2020/02/27/XOpgHNGVtWcEbr6.png&#34;
-        alt=&#34;15g.png&#34;/&gt;&lt;/p&gt;
-&lt;p&gt;这次我的内存稍稍多挺了一会，但那个期待中的电梯窗口还是没有出现。&lt;/p&gt;
-&lt;p&gt;至此，我还没有死心，为了排除是启用 Dwm 导致的，我特意安装了 Kde 环境，果然，在 Kde 下情况不一样了。&lt;/p&gt;
-&lt;p&gt;我的窗口在点击的时候直接最小化，但游戏还是没有按预期的情况正常运行。&lt;/p&gt;
-&lt;p&gt;翻回 Lutris 看了看下面的评论，罢了，游戏不玩就不玩罢！
-&lt;img  src=&#34;https://i.loli.net/2020/02/27/CiNqYQabsTJ4DIc.png&#34;
-        alt=&#34;reply.png&#34;/&gt;&lt;/p&gt;
 </description>
     </item>
     

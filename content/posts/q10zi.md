@@ -2,6 +2,7 @@
 title: "打字"
 date: 2021-02-22T22:04:49+08:00
 draft: flase
+tags: [Fcitx]
 ---
 
 打字时突然发觉，已忘了初心。
